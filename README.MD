@@ -19,7 +19,8 @@ Setelah perhitungan selesai, baris ini berfungsi untuk mengirimkan kembali hasil
 *Nomor 24-25*
 Bagian terakhir ini berfungsi sebagai instruksi untuk menjalankan aplikasi. Perintah `app.run(debug=True)` akan mengaktifkan server lokal sehingga website bisa diakses. Fitur `debug=True` sangat membantu dalam proses pengembangan karena aplikasi akan memberikan laporan otomatis jika terdapat kesalahan pada kode yang perlu diperbaiki.
 
-![Text Alt](GambarKalkulator.png) 
+![Text Alt](Kalkulator.ku.png)
+
 Tampilan pada gambar tersebut adalah antarmuka (UI) sederhana dari aplikasi **Kalkulator Keuntungan Usaha** yang saya buat menggunakan Flask. Berikut adalah penjelasan bagian-bagiannya:
 
 ---
@@ -40,5 +41,82 @@ Di bagian paling bawah ada tombol lebar bertuliskan *"Hitung"*. Ketika tombol in
 Tampilan ini menggunakan gaya yang bersih dengan kotak putih besar yang memiliki bayangan halus (*soft shadow*) di pinggirnya agar terlihat menonjol. Sudut-sudut kotaknya juga dibuat melengkung (*rounded*) agar terlihat lebih modern dan nyaman di mata, tidak kaku seperti aplikasi jadul.
 
 ---
+
+Tampilan pada gambar tersebut adalah antarmuka (UI) sederhana dari aplikasi **Kalkulator Keuntungan Usaha** yang saya buat menggunakan Flask. Berikut adalah penjelasan bagian-bagiannya:
+
+---
+
+*1. Judul Utama (Header)*
+Di bagian atas terdapat tulisan **"Kalkulator Keuntungan Usaha"**. Ini berfungsi sebagai identitas halaman agar pengguna langsung tahu bahwa fungsi utama alat ini adalah untuk menghitung profit atau laba dari sebuah bisnis.
+
+*2. Kolom Input (Data Masukan)*
+Terdapat tiga kotak putih yang harus diisi oleh pengguna dengan angka:
+*Modal Awal (Rp):*Tempat untuk memasukkan jumlah uang yang dikeluarkan di awal untuk memulai usaha atau stok barang.
+*Pendapatan (Rp):* Tempat untuk memasukkan total uang yang diterima dari hasil penjualan.
+*Biaya Operasional (Rp):* Tempat untuk memasukkan biaya tambahan lainnya, seperti ongkir, listrik, atau kemasan.
+
+*3. Tombol Eksekusi (Hitung)*
+Di bagian paling bawah ada tombol lebar bertuliskan *"Hitung"*. Ketika tombol ini diklik, data yang sudah diisi di kotak-kotak tadi akan dikirim ke mesin Flask (kode Python yang kita bahas sebelumnya) untuk diproses menggunakan rumus matematika.
+
+*4. Desain dan Tampilan*
+Tampilan ini menggunakan gaya yang bersih dengan kotak putih besar yang memiliki bayangan halus (*soft shadow*) di pinggirnya agar terlihat menonjol. Sudut-sudut kotaknya juga dibuat melengkung (*rounded*) agar terlihat lebih modern dan nyaman di mata, tidak kaku seperti aplikasi jadul.
+
+---
+![Text Alt](Kalkulator.ku.png)
+
+*Kalkulator Keuntungan Usaha*
+Kalkulator ini digunakan untuk menghitung *keuntungan bisnis* berdasarkan 3 komponen utama:
+
+1. **Modal Awal (Rp)*
+
+Ini adalah uang yang saya keluarkan di awal untuk memulai usaha.
+Contoh: beli bahan, alat, dll.
+Di gambar: *Rp 5.000.000*
+
+---
+ 2. *Pendapatan (Rp)*
+
+Ini adalah total uang yang saya dapat dari hasil penjualan.
+Di gambar: *Rp 7.000.000*
+
+---
+
+3. *Biaya Operasional (Rp)*
+Ini adalah biaya tambahan selama menjalankan usaha.
+Contoh: listrik, transport, gaji, dll.
+Di gambar: *Rp 1.000.000*
+
+---
+
+*Cara Kerja Kalkulator*
+
+Saat tombol *“Hitung”* ditekan, sistem melakukan 2 perhitungan:
+1. Keuntungan Bersih
+Rumus:
+Keuntungan = Pendapatan - (Modal + Biaya Operasional)
+Hasil:
+= 7.000.000 - (5.000.000 + 1.000.000)
+= 1.000.000
+Jadi keuntungan bersih: *Rp 1.000.000*
+
+---
+
+2. Persentase Keuntungan
+Rumus:
+Persentase = (Keuntungan / Modal) × 100%
+Hasil:
+= (1.000.000 / 5.000.000) × 100%
+= 20% 
+Jadi persentasenya: *20%*
+
+---
+ *Kesimpulan*
+
+* Usaha saya *untung*
+* Keuntungan = *Rp 1 juta*
+* Return dari modal = *20%*
+
+---
+
 
 
